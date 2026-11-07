@@ -120,20 +120,16 @@ footer{border-top:1px solid #eee;text-align:center;color:var(--muted);font-size:
 
 .spkcard .mono{width:96px;height:96px;border-radius:50%;background:var(--navy);color:var(--gold);font-family:'Crimson Text',Georgia,serif;font-weight:600;font-size:28px;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;letter-spacing:.05em}
 .spkcard .lgtxt{font-weight:500;font-size:13px;color:var(--navy);margin:7px auto 3px;min-height:14px}
-.spknote{color:var(--muted);font-size:12.5px;margin:-6px 0 12px}
 
 .spkcard img.lg{height:20px;max-width:110px}
 .spkcard .cn{color:var(--muted);font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-top:2px}
 
-/* speakers: featured upcoming fills first desktop viewport, 6-across */
-.spkgroup .spkgrid{}
-.spk-group.featgrp{min-height:min(calc(100vh - 200px),820px);display:flex;flex-direction:column;justify-content:center;padding-bottom:150px}
-.spk-group.featgrp h2{align-self:flex-start}
+/* speakers: featured upcoming grid, 6-across */
 .spkgrid.feat6 img.face,.spkgrid.feat6 .mono{width:100%;max-width:150px;height:auto;aspect-ratio:1;font-size:44px;margin:0 auto 14px}
 .spkgrid.feat6 .nm{font-size:16px}
 .spkgrid.feat6 img.lg{height:26px;max-width:120px;margin:10px auto 4px}
 .spkgrid.feat6 .lgtxt{font-size:15px;margin:10px auto 4px;min-height:22px}
 .spkgrid.feat6 .cn{font-size:12px}
 .spkgrid.feat6 .ti{font-size:13.5px}
-@media(max-width:960px){.spk-group.featgrp{min-height:0;padding-bottom:0;display:block}.spkgrid.feat6 img.face,.spkgrid.feat6 .mono{max-width:140px;font-size:38px}}
+@media(max-width:960px){.spkgrid.feat6 img.face,.spkgrid.feat6 .mono{max-width:140px;font-size:38px}}
 @media(max-width:520px){.spkgrid.feat6 img.face,.spkgrid.feat6 .mono{max-width:120px;font-size:34px}}
