@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Engage - Haas AI Club</title>
+<link rel="icon" href="assets/seal.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="index.html"><img src="assets/seal.png" alt="Haas AI Club seal"><span>Haas AI Club</span></a>
+  <nav class="top">
+      <a href="index.html">HOME</a>
+      <a href="events.html">EVENTS</a>
+      <a href="speakers.html">SPEAKERS</a>
+      <a href="team.html">TEAM</a>
+      <a href="engage.html" class="active">ENGAGE</a>
+  </nav>
+</header>
+<main>
+
+<h1 class="page">Engage</h1>
+<p class="lede">Work with the club.</p>
+
+<form class="eform" action="/api/engage" method="post">
+  <label class="fl" for="f-name">Name</label>
+  <input class="fi" type="text" id="f-name" name="name" required autocomplete="name">
+  <label class="fl" for="f-email">Email</label>
+  <input class="fi" type="email" id="f-email" name="email" required autocomplete="email">
+  <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <fieldset class="fr">
+    <legend class="fl">I want to</legend>
+    <label class="fro"><input type="radio" name="topic" value="propose-event" required> Propose an event</label>
+    <label class="fro"><input type="radio" name="topic" value="propose-track"> Propose a track</label>
+    <label class="fro"><input type="radio" name="topic" value="request-to-speak"> Request to speak</label>
+    <label class="fro"><input type="radio" name="topic" value="propose-sponsorship"> Propose a sponsorship</label>
+  </fieldset>
+  <label class="fl" for="f-message">Message</label>
+  <textarea class="fi" id="f-message" name="message" rows="6" required></textarea>
+  <button class="fbtn" type="submit">Send</button>
+</form>
+
+<div class="esoc">
+  <h2 class="evsec">Follow the Club</h2>
+  <div class="esocrow">
+    <a href="https://www.linkedin.com/company/haas-ai-club/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://www.instagram.com/haasaiclub/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://luma.com/haasaiclub" target="_blank" rel="noopener">Luma</a>
+  </div>
+</div>
+
+</main>
+<footer>Haas AI Club - UC Berkeley</footer>
+</body>
+</html>
