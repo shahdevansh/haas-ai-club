@@ -133,3 +133,32 @@ footer{border-top:1px solid #eee;text-align:center;color:var(--muted);font-size:
 .spkgrid.feat6 .ti{font-size:13.5px}
 @media(max-width:960px){.spkgrid.feat6 img.face,.spkgrid.feat6 .mono{max-width:140px;font-size:38px}}
 @media(max-width:520px){.spkgrid.feat6 img.face,.spkgrid.feat6 .mono{max-width:120px;font-size:34px}}
+
+/* home refresh: mission, calls to action, up next, speaker logos, photos */
+.home2{max-width:920px;margin:0 auto;padding:0 22px 20px}
+.home2 .home-hero{padding:64px 0 52px}
+.home2 .home-hero img.seal{width:96px;height:96px;margin-bottom:24px}
+.home2 .mission{max-width:560px;margin:26px auto 0;font-size:17px;color:var(--ink);text-align:center}
+.ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+.btn{font-family:'Crimson Text',Georgia,serif;font-weight:600;text-transform:uppercase;letter-spacing:.12em;font-size:14px;padding:12px 30px;border-radius:6px;text-decoration:none;display:inline-block}
+.btn.solid{background:var(--navy);color:var(--gold)}
+.btn.solid:hover{background:#23345e}
+.btn.ghost{border:1px solid var(--navy);color:var(--navy);padding:11px 29px}
+.btn.ghost:hover{color:var(--softgold);border-color:var(--softgold)}
+.sechead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-top:48px}
+.sechead .evsec{margin:0 0 8px}
+.sechead a{font-family:'Crimson Text',Georgia,serif;font-weight:600;text-transform:uppercase;letter-spacing:.1em;font-size:13px;color:var(--navy);text-decoration:none;white-space:nowrap}
+.sechead a:hover{color:var(--softgold)}
+.logostrip{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:22px 30px;padding:22px 6px 6px}
+.logostrip img{height:22px;width:auto;max-width:110px;object-fit:contain;filter:grayscale(1);opacity:.6}
+.photostrip{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:18px}
+.photostrip img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:6px;display:block}
+.photostrip .cap{font-size:13px;color:var(--muted);margin-top:6px}
+.flinks{display:flex;justify-content:center;flex-wrap:wrap;gap:12px 34px;margin-bottom:12px}
+.flinks a{font-family:'Crimson Text',Georgia,serif;font-weight:600;text-transform:uppercase;letter-spacing:.1em;font-size:13px;color:var(--navy);text-decoration:none}
+.flinks a:hover{color:var(--softgold)}
+@media (max-width:640px){
+  .home2 .home-hero{padding:40px 0 36px}
+  .photostrip{grid-template-columns:1fr}
+  .logostrip{justify-content:center}
+}
