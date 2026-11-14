@@ -1,0 +1,28 @@
+{
+  "event_type": "lunch & learn",
+  "title": "AI for Jobsearch",
+  "date": "2026-11-10",
+  "start_time": "12:00",
+  "end_time": "13:00",
+  "timezone": "America/Los_Angeles",
+  "format": "in-person",
+  "headcount": 70,
+  "minors": false,
+  "room_confirmed": "Chou N300",
+  "room_capacity": 76,
+  "pricing": "free",
+  "speakers": [
+    {
+      "name": "Kevin Astuhuaman",
+      "class_year": "MBA '26",
+      "company": "Trackly",
+      "title": "Founder",
+      "title_confirmed": true,
+      "bio": "Haas MBA '26, founder of Trackly (usetrackly.app), on using AI for networking, applications and interview prep.",
+      "headshot": "supplied",
+      "logo": "supplied"
+    }
+  ],
+  "food": "pizza for ~40 expected turnout, budget ~$120",
+  "email_blast": true
+}
