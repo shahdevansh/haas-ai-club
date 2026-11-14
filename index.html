@@ -22,18 +22,91 @@
   </nav>
 </header>
 <main class="home">
+<div class="home2">
 
-<div class="home-wrap">
 <section class="home-hero">
   <img class="seal" src="assets/seal.png" alt="Haas AI Club seal">
   <h1>Haas Artificial<br>Intelligence Club</h1>
   <div class="sub">University of California Berkeley</div>
   <div class="squares"><span style="background:#192849"></span><span style="background:#FECB03"></span><span style="background:#F1B844"></span></div>
+  <p class="mission">Where Haas MBAs learn, build and recruit in AI, through speakers, hackathons and treks across the Bay Area.</p>
+  <div class="ctas">
+    <a class="btn solid" href="https://haas.campusgroups.com/haic/home/" target="_blank" rel="noopener">Join the club</a>
+    <a class="btn ghost" href="events.html">See all events</a>
+  </div>
 </section>
-<p class="upnext">Up next: <strong>Snowflake AI PM Roles: AMA</strong> &middot; Fri Nov 13 &middot; Virtual on Zoom</p>
+
+<div class="sechead"><h2 class="evsec">Up next</h2><a href="events.html">All events &rarr;</a></div>
+<div id="upnext">
+  <div class="ev" data-date="2026-11-13">
+    <div class="evd">Fri Nov 13</div>
+    <div class="evm"><div class="evt">Snowflake AI PM Roles: AMA</div></div>
+    <a class="evgo" href="https://haas.campusgroups.com/haic/rsvp_boot?id=2251536" target="_blank" rel="noopener">RSVP &rarr;</a>
+  </div>
+  <div class="ev" data-date="2026-11-17">
+    <div class="evd">Tue Nov 17</div>
+    <div class="evm"><div class="evt">AI Risk Series: Emma Pierson - Interpretability for Safety &amp; Scientific Discovery</div></div>
+    <a class="evgo" href="https://haas.campusgroups.com/haic/rsvp_boot?id=2251530" target="_blank" rel="noopener">RSVP &rarr;</a>
+  </div>
+  <div class="ev" data-date="2026-11-18">
+    <div class="evd">Wed Nov 18</div>
+    <div class="evm"><div class="evt">From Strategy to Silicon: AI Dinner &amp; Learn with NVIDIA</div></div>
+    <a class="evgo" href="https://haas.campusgroups.com/haic/rsvp_boot?id=2251537" target="_blank" rel="noopener">RSVP &rarr;</a>
+  </div>
+  <div class="ev" data-date="2026-11-19">
+    <div class="evd">Thu Nov 19</div>
+    <div class="evm"><div class="evt">Where is Frontier AI headed?</div></div>
+    <a class="evgo" href="https://haas.campusgroups.com/haic/rsvp_boot?id=2251523" target="_blank" rel="noopener">RSVP &rarr;</a>
+  </div>
+  <div class="ev" data-date="2026-11-19">
+    <div class="evd">Thu Nov 19</div>
+    <div class="evm"><div class="evt">Careers in AI: Fireside with Alumni</div></div>
+    <a class="evgo" href="https://haas.campusgroups.com/haic/rsvp_boot?id=2251461" target="_blank" rel="noopener">RSVP &rarr;</a>
+  </div>
+</div>
+<p class="upnext-empty" hidden style="color:var(--muted);font-size:14px;padding:18px 6px">More events coming soon. <a href="events.html">See past events</a>.</p>
+
+<div class="sechead"><h2 class="evsec">Speakers have come from</h2><a href="speakers.html">All speakers &rarr;</a></div>
+<div class="logostrip">
+    <img src="assets/logos/openai.svg" alt="OpenAI">
+    <img src="assets/logos/anthropic.svg" alt="Anthropic">
+    <img src="assets/logos/apple.svg" alt="Apple">
+    <img src="assets/logos/nvidia.svg" alt="NVIDIA">
+    <img src="assets/logos/microsoft.svg" alt="Microsoft">
+    <img src="assets/logos/github.svg" alt="GitHub">
+    <img src="assets/logos/youtube.svg" alt="YouTube">
+    <img src="assets/logos/salesforce.svg" alt="Salesforce">
+    <img src="assets/logos/cisco.svg" alt="Cisco">
 </div>
 
+<div class="sechead"><h2 class="evsec">This fall</h2><a href="events.html">All past events &rarr;</a></div>
+<div class="photostrip">
+  <div><img src="assets/event-jobsearch-1.jpg" alt="A full room at the AI for Job Search session in Chou Hall"><div class="cap">AI for Job Search &middot; Nov 10</div></div>
+  <div><img src="assets/event-jobsearch-2.jpg" alt="Kevin Astuhuaman presenting at AI for Job Search"><div class="cap">AI for Job Search &middot; Nov 10</div></div>
+</div>
+
+</div>
 </main>
-<footer>Haas AI Club - UC Berkeley</footer>
+<script>
+// Show the next 3 upcoming events and hide past ones, so the home page never shows stale events.
+(function(){
+  var today=new Date(); today.setHours(0,0,0,0);
+  var items=document.querySelectorAll('#upnext .ev[data-date]'), shown=0;
+  items.forEach(function(el){
+    var d=new Date(el.getAttribute('data-date')+'T23:59:59');
+    if(d<today || shown>=3) el.style.display='none'; else shown++;
+  });
+  if(!shown) document.querySelector('.upnext-empty').hidden=false;
+})();
+</script>
+<footer>
+  <div class="flinks">
+    <a href="https://haas.campusgroups.com/haic/home/" target="_blank" rel="noopener">Campus Groups</a>
+    <a href="https://www.instagram.com/haasaiclub/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.linkedin.com/company/haas-ai-club/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://luma.com/haasaiclub" target="_blank" rel="noopener">Luma</a>
+  </div>
+  Haas AI Club - UC Berkeley
+</footer>
 </body>
 </html>
